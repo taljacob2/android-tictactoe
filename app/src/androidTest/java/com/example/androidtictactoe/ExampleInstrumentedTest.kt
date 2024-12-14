@@ -1,4 +1,4 @@
-package com.example.myapplication9
+package com.example.androidtictactoe
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -20,6 +20,6 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext =
             InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.myapplication9", appContext.packageName)
+        assertEquals("com.example.androidtictactoe", appContext.packageName)
     }
 }
