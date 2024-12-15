@@ -6,6 +6,8 @@ import android.util.Log
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+    private var button: Button? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,8 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupUi() {
-        val button: Button = findViewById(R.id.buttonMain)
-        button.setOnClickListener { finish() }
+        button = findViewById(R.id.buttonMain)
+        button!!.setOnClickListener { finish() }
     }
 
     override fun onStop() {
