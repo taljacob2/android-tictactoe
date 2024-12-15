@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupUi() {
-        button = findViewById(R.id.buttonMain)
+        button = findViewById(R.id.buttonMainStopActivity)
         button!!.setOnClickListener { finish() }
     }
 
