@@ -2,6 +2,7 @@ package com.example.androidtictactoe
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +16,11 @@ class MainActivity : AppCompatActivity() {
     private fun setupUi() {
         val button: Button = findViewById(R.id.buttonMain)
         button.setOnClickListener { finish() }
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        Log.d(Log.INFO.toString(), "activity stopped")
     }
 }
