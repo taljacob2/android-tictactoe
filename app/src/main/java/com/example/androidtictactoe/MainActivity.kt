@@ -21,6 +21,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
 
-        Log.d(Log.INFO.toString(), "activity stopped")
+        Log.d(MainActivity::class.java.name, "activity stopped")
     }
 }
